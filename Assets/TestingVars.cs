@@ -5,7 +5,7 @@ using UnityEngine;
 [RequireComponent(typeof(AudioSource))]
 public class TestingVars : MonoBehaviour
 {
-    #region
+    #region Variables
     [Header("Test Header")]
 
     [Tooltip("This is a tooltip that can give a neat little description of this variable.")]
@@ -19,6 +19,7 @@ public class TestingVars : MonoBehaviour
     private AudioSource audioSource;
     #endregion
 
+    #region Functions
     // Start is called before the first frame update
     void Start()
     {
@@ -31,4 +32,5 @@ public class TestingVars : MonoBehaviour
     {
         descOfBool = testBool ? "Bool is true." : "Bool is false.";
     }
+    #endregion
 }
