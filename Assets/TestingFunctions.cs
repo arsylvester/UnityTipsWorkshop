@@ -18,6 +18,16 @@ public class TestingFunctions : MonoBehaviour
         print("Awake");
     }
 
+    private void OnEnable()
+    {
+        print("On Enable");
+    }
+
+    private void OnDisable()
+    {
+        print("On Disable");
+    }
+
     void Update()
     {
         if(update) print("Update");
