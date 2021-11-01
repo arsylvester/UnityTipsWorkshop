@@ -44,7 +44,7 @@ public class TestingCoroutines : MonoBehaviour
     {
         while(true)
         {
-            print("I WILL PRINT FOREVER");
+            print("I WILL PRINT FOREVER!");
             yield return new WaitForEndOfFrame();
         }
     }
