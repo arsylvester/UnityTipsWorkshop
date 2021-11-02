@@ -11,7 +11,7 @@ public class TestingVars : MonoBehaviour
     [Tooltip("This is a tooltip that can give a neat little description of this variable.")]
     [Range(0, 10)]
     [SerializeField]
-    private float testFloat = 10.5f;
+    private float testFloat = 9f;
 
     [SerializeField] private string descOfBool = "";
     [SerializeField] private bool testBool = false;
