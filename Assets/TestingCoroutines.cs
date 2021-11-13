@@ -5,6 +5,7 @@ using UnityEngine;
 public class TestingCoroutines : MonoBehaviour
 {
     [SerializeField] bool waitFor = false;
+    [SerializeField] bool runForeverCoroutine = false;
     [SerializeField] bool stopCoroutine = false;
     private Coroutine foreverCoroutine;
 
@@ -12,7 +13,7 @@ public class TestingCoroutines : MonoBehaviour
     {
         StartCoroutine(WaitExampleCoroutine());
         //ShowPrivateCoroutine();
-        //foreverCoroutine = StartCoroutine(WaitForever());
+        if(runForeverCoroutine) foreverCoroutine = StartCoroutine(WaitForever());
     }
 
     void Update()

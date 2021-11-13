@@ -142,7 +142,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!54 &142460001
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -490,7 +490,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &794234760
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -504,6 +504,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   waitFor: 0
+  runForeverCoroutine: 0
   stopCoroutine: 0
 --- !u!4 &794234761
 Transform:
@@ -806,7 +807,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1297154972
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -822,6 +823,9 @@ MonoBehaviour:
   update: 0
   fixedUpdate: 0
   lateUpdate: 0
+  onEnable: 0
+  onTriggerStay: 0
+  onTriggerExit: 0
 --- !u!4 &1297154973
 Transform:
   m_ObjectHideFlags: 0

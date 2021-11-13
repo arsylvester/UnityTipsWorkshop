@@ -17,5 +17,6 @@ public class RecieveEvents : MonoBehaviour
     public void OnEventBeenRecieved()
     {
         print("Event Recieved!");
+
     }
 }

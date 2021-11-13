@@ -7,6 +7,9 @@ public class TestingFunctions : MonoBehaviour
     [SerializeField] bool update = false;
     [SerializeField] bool fixedUpdate = false;
     [SerializeField] bool lateUpdate = false;
+    [SerializeField] bool onEnable = false;
+    [SerializeField] bool onTriggerStay = false;
+    [SerializeField] bool onTriggerExit = false;
 
     void Start()
     {
@@ -20,7 +23,7 @@ public class TestingFunctions : MonoBehaviour
 
     private void OnEnable()
     {
-        print("On Enable");
+        if (onEnable) print("On Enable");
     }
 
     private void OnDisable()
@@ -55,12 +58,12 @@ public class TestingFunctions : MonoBehaviour
 
     private void OnTriggerExit(Collider other)
     {
-        print("Trigger Exit with " + other.gameObject.name);
+        if(onTriggerExit) print("Trigger Exit with " + other.gameObject.name);
     }
 
     private void OnTriggerStay(Collider other)
     {
-        print("Trigger Stay with " + other.gameObject.name);
+        if(onTriggerStay) print("Trigger Stay with " + other.gameObject.name);
     }
 
     private void OnDestroy()
